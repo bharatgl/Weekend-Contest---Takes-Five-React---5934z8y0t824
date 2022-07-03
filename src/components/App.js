@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-import "../styles/App.css";
 const App = () => {
   const [number, setNumber] = useState(1);
 
@@ -25,7 +24,7 @@ const App = () => {
       <button
         id="back-button"
         onClick={() => setNumber(number - 5)}
-        disabled={number == 1 ? true : false}
+        disabled={number === 1 ? true : false}
       >
         Prev Page
       </button>
